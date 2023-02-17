@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <style>
+        
+        
+        button{
+            background-color: rgb(252, 240, 240);
+            color:black;
+            font-weight: bolder;
+            margin-left: 600px;
+            margin-top: 400px;
+            min-height: 30px;
+            border-radius: 5px;
+            border-style: double;
+            background-repeat: no-repeat;
+        }
+        button:hover{
+            color: blue;
+            border-color: blue;
+        }
+     </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hex Color</title>
+  </head>
+  <body>
+    <h1>Hex Color</h1>
+    <div class="container">
+        
+            
+        <button onclick="toggle()">Change Color</button>
+    
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+  <script>
+    
+    let sw=document.querySelector("button");
+    //console.log(sw)
+   let c=0;
+    //sw.addEventListener("click",toggle());
+    function toggle()
+    {
+        //let img=document.body.style.backgroundImage
+        //let img=document.getElementsByTagName("img");
+        c++;
+       
+        console.log(c);
+        
+        switch(c){
+            case 1:
+                {
+                    document.body.style.backgroundImage='url("hexcolor-2.png")'; 
+                     break;}
+                case 2:
+                {
+                    document.body.style.backgroundImage='url("hexcolor-3.png")'; 
+                    break;
+                }
+                case 3:
+                {
+                    document.body.style.backgroundImage='url("hexcolor-4.png")'; 
+                    break;             }
+                
+                case 5:
+                {
+                    document.body.style.backgroundImage='url("hexcolor-6.png")';  
+                    break;           }
+                case 6:
+                {
+                    document.body.style.backgroundImage='url("hexcolor-1.png")'; 
+                c=0;       
+                break;        }
+        
+        }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>
